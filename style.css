@@ -2,7 +2,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #f0f0f0;
-    background-color: #121212;
+    background-color: black;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -11,9 +11,10 @@ body {
 
 /* Header styles */
 header {
-    background-color: #1f1f1f;
+    background-color: black;
     padding: 20px 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+    
 }
 
 .profile-container {
@@ -176,7 +177,7 @@ section {
 
 /* Footer Styles */
 footer {
-    background-color: #1f1f1f;
+    background-color: black;
     padding: 10px;
     text-align: center;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.8);
