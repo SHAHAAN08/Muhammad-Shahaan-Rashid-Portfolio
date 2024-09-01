@@ -14,6 +14,7 @@ header {
     background-color: black;
     padding: 20px 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+    
 }
 
 .profile-container {
@@ -118,6 +119,7 @@ section {
 }
 
 /* Project Styles */
+/* Project Styles */
 .project {
     margin: 30px 0;
     padding: 20px;
@@ -164,6 +166,7 @@ section {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
 }
 
+
 /* Button Styles */
 .button {
     display: inline-block;
@@ -193,9 +196,52 @@ section {
 /* Footer Styles */
 footer {
     background-color: black;
-    padding: 20px 0;
+    padding: 10px;
     text-align: center;
-    color: #f0f0f0;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.8);
-    margin-top: 30px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to sections */
+section {
+    animation: fadeIn 1s ease-out;
+
+    .certification-list {
+        list-style: none; /* Removes default list bullets */
+        padding: 0; /* Removes default padding */
+        margin: 0; /* Removes default margin */
+    }
+    
+    .certification-list li {
+        margin-bottom: 10px; /* Spacing between list items */
+        display: flex; /* Centers image within list item */
+        justify-content: center; /* Centers image horizontally */
+    }
+    
+    .certification-list img {
+        max-width: 100%; /* Ensures images do not overflow their container */
+        height: auto; /* Maintains aspect ratio of images */
+        border-radius: 8px; /* Optional: Adds rounded corners to the images */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for better visual appearance */
+    }
+    
+
+
+
+
+}
+
