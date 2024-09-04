@@ -119,8 +119,6 @@
     <section id="projects">
         <h2>My Projects</h2>
         
-        <input type="text" id="search-input" placeholder="Search for projects..." />
-    
         <!-- Project 1 -->
         <article class="project">
             <header>
@@ -155,7 +153,7 @@
             <p>Description:Python Tkinter app white board from scratch</p>
             <img src="Screenshot 2024-09-01 032827.png" height="500" width="500" alt="Portfolio Website Screenshot" class="project-screenshot">
             <p>Technologies Used: Python Tkinter</p>
-            <a href="https://drive.google.com/drive/folders/1tldMWh6p4dLPfoBieY75x3zvMaCF5utK?usp=drive_link" class="button" download>Download White Board app</a>
+            <a href="https://drive.google.com/drive/folders/1n08SkazuagufX4eKZLAiO8fpNxDhvgh4?usp=drive_link" class="button" download>Download White Board app</a>
         </article>
         </article>
         <article class="project">
@@ -168,7 +166,7 @@
             <img src="Screenshot 2024-09-03 135038.png" height="500" width="500" alt="Portfolio Website Screenshot" class="project-screenshot">
             <img src="Screenshot 2024-09-03 134959.png" height="500" width="500" alt="Portfolio Website Screenshot" class="project-screenshot">
             <p>Technologies Used: Python Tkinter</p>
-            <a href="https://drive.google.com/drive/folders/1n08SkazuagufX4eKZLAiO8fpNxDhvgh4?usp=drive_link" class="button" download>Download Login and signin system</a>
+            <a href="https://drive.google.com/drive/folders/11MHDSj23ANpZ0wccAxopX5gt4zD_p652?usp=drive_link" class="button" download>Download Login and signin system</a>
         </article>
         <article class="project">
             <header>
@@ -179,7 +177,7 @@
             <p>Description:Python Tkinter Screen Recorder able to record vedio of your projects but it cant record audio</p>
             <img src="Screenshot 2024-09-04 010031.png" height="500" width="500" alt="Portfolio Website Screenshot" class="project-screenshot">
             <p>Technologies Used: Python Tkinter</p>
-            <a href="https://drive.google.com/drive/folders/1sxAY_O5h9nYogI20bOuDC8aw7cvrUYq_?usp=drive_link" class="button" download>Download Screen Recorder</a>
+            <a href="https://drive.google.com/drive/folders/1d5kGbbhluF9p3vj7B03feBj2H6GQDv8R?usp=drive_link" class="button" download>Download Screen Recorder</a>
         </article>
         
         
@@ -205,28 +203,7 @@
         }
     </script>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const searchInput = document.getElementById('search-input');
-            const projects = document.querySelectorAll('.project');
-            
-            searchInput.addEventListener('input', function() {
-                const query = searchInput.value.toLowerCase();
-                
-                projects.forEach(project => {
-                    const title = project.querySelector('h3').textContent.toLowerCase();
-                    const description = project.querySelector('p').textContent.toLowerCase();
-                    
-                    if (title.includes(query) || description.includes(query)) {
-                        project.style.display = 'block';
-                    } else {
-                        project.style.display = 'none';
-                    }
-                });
-            });
-        });
-    </script>
-    
+   
         
 </body>
 </html>
