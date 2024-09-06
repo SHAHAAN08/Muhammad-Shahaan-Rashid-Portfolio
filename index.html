@@ -117,6 +117,9 @@
     </section>
 
     <section id="projects">
+        <div class="search-bar">
+            <input type="text" id="project-search" placeholder="Search projects...">
+        </div>
         <h2>My Projects</h2>
         
         <!-- Project 1 -->
@@ -179,28 +182,48 @@
             <p>Technologies Used: Python Tkinter</p>
             <a href="https://drive.google.com/drive/folders/1d5kGbbhluF9p3vj7B03feBj2H6GQDv8R?usp=drive_link" class="button" download>Download Screen Recorder</a>
         </article>
-                <article class="project">
+
+
+        <article class="project">
             <header>
                 <img src="arrow.png" alt="Portfolio Website Logo" class="project-logo">
                 <h3>Language translator</h3>
             </header>           
-            <p class="project-date">Published on September 6, 2024</p>
+            <p class="project-date">Published on September 5, 2024</p>
             <p>Description:Python Tkinter language translator</p>
             <img src="Screenshot 2024-09-06 052048.png" height="500" width="500" alt="Portfolio Website Screenshot" class="project-screenshot">
             <p>Technologies Used: Python Tkinter</p>
-            <a href="trans" class="button" download>Download translator</a>
+            <a href="https://drive.google.com/drive/folders/1voAy-CLtmFkKLPvraI6ocAux-3hnnPWN?usp=drive_link" class="button" download>Download translator</a>
 
         </article>
-        
-        
+
         
     
         <!-- Add more projects as needed -->
     </section>
+
     
     <footer>
         <p>&copy; 2024 Muhammd Shahaan Rashid Portfolio. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.getElementById('project-search').addEventListener('input', function() {
+            var query = this.value.toLowerCase();
+            var projects = document.querySelectorAll('#projects .project');
+
+            projects.forEach(function(project) {
+                var title = project.querySelector('h3').textContent.toLowerCase();
+                var description = project.querySelector('p').textContent.toLowerCase();
+                
+                if (title.includes(query) || description.includes(query)) {
+                    project.style.display = '';
+                } else {
+                    project.style.display = 'none';
+                }
+            });
+        });
+    </script>
 
     <script type="application/ld+json">
         {
