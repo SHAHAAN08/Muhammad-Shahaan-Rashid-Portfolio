@@ -239,6 +239,35 @@ section {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for better visual appearance */
     }
 
+    /* Search Bar Styles */
+.search-bar {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.search-bar input {
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid #333; /* Dark border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #1e1e1e; /* Dark background */
+    color: #fff; /* White text */
+}
+
+.search-bar input::placeholder {
+    color: #bbb; /* Light gray placeholder text */
+}
+
+/* Optional: Add some focus styles for better user experience */
+.search-bar input:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Blue shadow */
+}
+
+
 
     
 
